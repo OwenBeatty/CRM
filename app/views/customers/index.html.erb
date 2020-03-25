@@ -1,0 +1,10 @@
+<h1 class="title">All Customers</h1>
+<div class="content">
+  <div class="columns">
+    <% @customers.each do |customer| %>
+      <div class="column">
+        <%= render partial: 'customer', object: customer %>
+      </div>
+    <% end %>
+  </div>
+</div>
